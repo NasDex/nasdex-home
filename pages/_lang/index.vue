@@ -38,7 +38,7 @@
         </div>
         <!-- 右弹框 -->
         <div class="rightFrameAll" v-show="isRightFrame" @mousewheel.prevent @touchmove.prevent>
-          <div class="leftFrame"></div>
+          <!-- <div class="leftFrame"></div> -->
           <div class="rightFrame">
             <div class="frameTop">
               <img src="../../assets/img/nasdexImg/h5NavOff.png" alt="" @click="isRightFrame=false">
@@ -629,11 +629,11 @@ export default {
     width: 100%;
     position: relative;
     .backgroundThree{
+      // display: none;
         position:absolute;
         width: 390px;
         height: 682px;
-        background: linear-gradient(180deg,#041425,#00D2E3);
-        opacity: 0.09;
+        background: linear-gradient(180deg,rgba(4,20,37,0.1),rgba(0,210,227,0.1));
         filter: blur(50px);
         right: 0;
         top: 96px;
@@ -676,7 +676,7 @@ export default {
         top: 2998px;
         width: 623px;
         height: 1019px;
-        opacity: 0.64;
+        
         background: url('../../assets/img/nasdexImg/crossSection.png') no-repeat;
         background-size: cover;
     }
@@ -684,22 +684,20 @@ export default {
       position:absolute;
       width: 487px;
       height: 489px;
-      background: linear-gradient(180deg,#041425,#076CEE);
+      background: linear-gradient(180deg,rgba(4,20,37,0.1),rgba(0,210,227,0.1));
       filter: blur(50px);
       left: 113px;
       top: 4042px;
-      opacity: 0.1;
     }
     .backgroundTen{
       position:absolute;
       z-index: 20;
       width: 682px;
       height: 682px;
-      background: linear-gradient(180deg,#041425,#00D2E3);
+      background: linear-gradient(180deg,rgba(4,20,37,0.1),rgba(0,210,227,0.1));
       filter: blur(50px);
       right: 138px;
       top: 4531px;
-      opacity: 0.09;
     }
     .backgroundOne{
       position:absolute;
@@ -741,8 +739,9 @@ export default {
       position: fixed;
       top: 0;
       z-index: 1000;
+      padding: 0 40px 0;
       .svg{
-        margin-left: 40px;
+        // margin-left: 40px;
       }
       img {
         width: 125px;
@@ -753,15 +752,9 @@ export default {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        // position: relative;
-        // background: #000;
         z-index: 80;
         font-size: 14px;
         height: 64px;
-        // position: fixed;
-        // top: 0;
-        // right: 0;
-        // z-index: 1000;
         font-family: 'Rubik-Regular';
         img {
           height: 12px;
@@ -769,108 +762,107 @@ export default {
         .navOne {
           width: 96px;
           display: inline-block;
+          text-align: center;
           a{
-            color: #fff;
-            opacity: 0.5;
+            color: rgba(255,255,255,0.5);
           }
         }
         .navOneA{
           display: inline-block;
+          text-align: center;
           width: 96px;
           a{
-            color: #fff;
-            opacity: 1;
+            color:rgba(255,255,255,1);
           }
         }
         .navTwo {
           display: inline-block;
+          text-align: center;
           width: 155px;
           a{
-            color: #fff;
-            opacity: 0.5;
+            color: rgba(255,255,255,0.5);
           }
         }
         .navTwoA {
           display: inline-block;
+          text-align: center;
           width: 155px;
           a{
-            color: #fff;
-            opacity: 1;
+            color: rgba(255,255,255,1);
           }
         }
         .navThree {
           display: inline-block;
+          text-align: center;
           width: 88px;
           a{
-            color: #fff;
-            opacity: 0.5;
+            color: rgba(255,255,255,0.5);
           }
         }
         .navThreeA {
           display: inline-block;
+          text-align: center;
           width: 88px;
           a{
-            color: #fff;
-            opacity: 1;
+            color: rgba(255,255,255,1);
           }
         }
         .navFour {
           display: inline-block;
+          text-align: center;
           width: 88px;
           a{
-            color: #fff;
-            opacity: 0.5;
+            color: rgba(255,255,255,0.5);
           }
         }
         .navFourA {
           display: inline-block;
+          text-align: center;
           width: 88px;
           a{
-            color: #fff;
-            opacity: 1;
+            color: rgba(255,255,255,1);
           }
         }
         .navFive {
           display: inline-block;
+          text-align: center;
           width: 136px;
           a{
-            color: #fff;
-            opacity: 0.5;
+            color: rgba(255,255,255,0.5);
           }
         }
         .navFiveA {
           display: inline-block;
+          text-align: center;
           width: 136px;
           a{
-            color: #fff;
-            opacity: 1;
+            color: rgba(255,255,255,1);
           }
         }
         .navSix {
           display: inline-block;
+          text-align: center;
           width: 126px;
           a{
-            color: #fff;
-            opacity: 0.5;
+            color: rgba(255,255,255,0.5);
           }
         }
         .navSixA {
           display: inline-block;
+          text-align: center;
           width: 126px;
           a{
-            color: #fff;
-            opacity: 1;
+            color: rgba(255,255,255,1);
           }
         }
         .btnA{
           width: 138px;
           height: 40px;
           line-height: 40px;
-          background: linear-gradient(236deg,#00D4E3,#0082FF);
+          background: linear-gradient(236deg,rgba(0,212,227,0.8),rgba(0,130,255,0.8));
           display: inline-block;
           border-radius: 30px;
           text-align: center;
-          opacity: 0.8;
           span{
             color: #fff;
           }
@@ -883,7 +875,6 @@ export default {
           display: inline-block;
           border-radius: 30px;
           text-align: center;
-          opacity: 1;
           span{
             color: #fff;
           }
@@ -946,7 +937,6 @@ export default {
           text-align: center;
           display: inline-block;
           line-height: 64px;
-          opacity: 1;
           color: #fff;
           font-size: 22px;
         }
@@ -960,7 +950,6 @@ export default {
           border-radius: 37px;
           text-align: center;
           line-height: 64px;
-          opacity: 1;
           color: #fff;
           font-size: 22px;
         }
@@ -1033,7 +1022,6 @@ export default {
           background: linear-gradient(236deg,#0082FF,#00D4E3);
           border-radius: 37px;
           text-align: center;
-          opacity: 1;
           display: inline-block;
           color: #fff;
           font-size: 22px;
@@ -1046,7 +1034,6 @@ export default {
           background: linear-gradient(236deg,#00D4E3,#0082FF);
           border-radius: 37px;
           text-align: center;
-          opacity: 1;
           display: inline-block;
           color: #fff;
           font-size: 22px;
@@ -1466,7 +1453,6 @@ export default {
                     width: 26px;
                     height: 24px;
                     margin-left: 9px;
-                    opacity: 0.9;
                   }
                 }
                 .JDA{
@@ -1475,7 +1461,6 @@ export default {
                     width: 26px;
                     height: 24px;
                     margin-left: 9px;
-                    opacity: 1;
                   }
                 }
               }
@@ -1542,7 +1527,6 @@ export default {
                     width: 26px;
                     height: 24px;
                     margin-left: 9px;
-                    opacity: 0.9;
                   }
                 }
                 .BZA{
@@ -1551,7 +1535,6 @@ export default {
                     width: 26px;
                     height: 24px;
                     margin-left: 9px;
-                    opacity: 1;
                   }
                 }
               }
@@ -1656,7 +1639,6 @@ export default {
                     width: 26px;
                     height: 24px;
                     margin-left: 9px;
-                    opacity: 0.9;
                   }
                 }
                 .GSA{
@@ -1665,7 +1647,6 @@ export default {
                     width: 26px;
                     height: 24px;
                     margin-left: 9px;
-                    opacity: 1;
                   }
                 }
               }
@@ -1729,7 +1710,6 @@ export default {
                 width: 26px;
                 height: 24px;
                 margin-left: 9px;
-                opacity: 0.9;
               }
             }
             .RWA{
@@ -1739,7 +1719,6 @@ export default {
                 width: 26px;
                 height: 24px;
                 margin-left: 9px;
-                opacity: 1;
               }
             }
             .TT{
@@ -1749,7 +1728,6 @@ export default {
                 width: 26px;
                 height: 24px;
                 margin-left: 9px;
-                opacity: 0.9;
               }
             }
             .TTA{
@@ -1759,7 +1737,6 @@ export default {
                 width: 26px;
                 height: 24px;
                 margin-left: 9px;
-                opacity: 1;
               }
             }
             .AF{
@@ -1769,7 +1746,6 @@ export default {
                 width: 26px;
                 height: 24px;
                 margin-left: 9px;
-                opacity: 0.9;
               }
             }
             .AFA{
@@ -1779,7 +1755,6 @@ export default {
                 width: 26px;
                 height: 24px;
                 margin-left: 9px;
-                opacity: 1;
               }
             }
             
@@ -2010,8 +1985,7 @@ export default {
         text-align: center;
         font-size: 14px;
         font-family: "Rubik-Regular";
-        color: #fff;
-        opacity: 69%;
+        color: rgba(255,255,255,0.7);
         margin-top: 8px;
       }
       .footerEnter{
@@ -2031,8 +2005,7 @@ export default {
         height: 17px;
         font-size: 14px;
         font-family: "Rubik-Regular";
-        color: #fff;
-        opacity: 69%;
+        color: rgba(255,255,255,0.7);
         margin-top: 18px;
       }
     }
@@ -2053,22 +2026,22 @@ export default {
 }
 @keyframes bounce-opcity {
   25% {
-    opacity: 0.5;
+  //  //  opacity: 0.5;
   }
   // 40%{
   //      opacity: 0.3;
   // }
   50% {
-    opacity: 0;
+  //  //  opacity: 0;
   }
   75% {
-    opacity: 0.5;
+  //  //  opacity: 0.5;
   }
   // 75% {
   //      opacity: 0.9;
   // }
   100% {
-    opacity: 1;
+  //  // opacity: 1;
   }
 }
 @media screen and (max-width: 750px) {
@@ -2156,7 +2129,6 @@ export default {
         .svg{
           position: relative;
           z-index: 600;
-          opacity: 0.8;
           margin-left: 0;
         }
         .nav{
@@ -2177,27 +2149,26 @@ export default {
         .rightFrameAll{
           width: 100%;
           height: 812px;
-          // background: #000;
-          // opacity: 60%;
+          background: rgba(0,0,0,0.5);
           display: block;
           position: absolute;
           top: 0;
           left: 0;
           z-index: 1001;
           display: flex;
-          .leftFrame{
-            width: 300px;
-            height: 812px;
-            background: #000;
-            opacity: 0.5;
-          }
+          // .leftFrame{
+          //   // display: none;
+          //   width: 300px;
+          //   height: 812px;
+          //   background: rgba(0,0,0,0.5);
+          // }
           .rightFrame{
+            // display: none;
             display: block;
             position: absolute;
             width: 220px;
             height: 812px;
             background: #032543;
-            opacity: 100%;
             right: 0;
             top: 0;
             z-index: 500;
