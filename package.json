@@ -1,0 +1,29 @@
+{
+  "name": "Ano",
+  "version": "1.0.0",
+  "description": "Ano",
+  "author": "sunny",
+  "private": true,
+  "scripts": {
+    "dev": "backpack dev",
+    "build": "nuxt build && backpack build",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@chenfengyuan/vue-qrcode": "^1.0.2",
+    "axios": "^0.19.2",
+    "cross-env": "^5.2.0",
+    "koa": "^2.6.2",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/axios": "^5.11.0",
+    "@nuxtjs/proxy": "^2.0.0",
+    "backpack-core": "^0.8.4",
+    "node-sass": "^5.0.0",
+    "nodemon": "^1.18.9",
+    "sass-loader": "^10.0.2",
+    "vue-i18n": "^8.21.0"
+  }
+}
