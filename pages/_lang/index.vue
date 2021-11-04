@@ -251,14 +251,20 @@
         </div>
         <div class="titlePar">PARTNERS AND INVESTORS</div>
         <div class="ParTitle">
-          <img src="../../assets/img/nasdexImg/PlutusVC@2x.png" alt="">
-          <img src="../../assets/img/nasdexImg/Firefly-Capital@2x.png" alt="">
-          <img src="../../assets/img/nasdexImg/RioFund@2x.png" alt="">
-          <img src="../../assets/img/nasdexImg/NexusBlock@2x.png" alt="">
-          <img src="../../assets/img/nasdexImg/Zero2Launch@2x.png" alt="">
-          <img src="../../assets/img/nasdexImg/polygon@2x.png" alt="">
-          <img src="../../assets/img/nasdexImg/Quickswap@2x.png" alt="">
-          <img src="../../assets/img/nasdexImg/starter@2x.png" alt="">
+          <div><img src="../../assets/img/nasdexImg/PlutusVC@2x.png" alt=""></div>
+          <div><img src="../../assets/img/nasdexImg/Firefly-Capital@2x.png" alt=""></div>
+          <div><img src="../../assets/img/nasdexImg/RioFund@2x.png" alt=""></div>
+          <div><img src="../../assets/img/nasdexImg/NexusBlock@2x.png" alt=""></div>
+          <div><img src="../../assets/img/nasdexImg/Zero2Launch@2x.png" alt=""></div>
+          <div><img src="../../assets/img/nasdexImg/polygon@2x.png" alt=""></div>
+          <div><img src="../../assets/img/nasdexImg/Quickswap@2x.png" alt=""></div>
+          <div><img src="../../assets/img/nasdexImg/starter@2x.png" alt=""></div>
+          <div><img src="../../assets/img/nasdexImg/Gate.png" alt=""></div>
+          <div><img src="../../assets/img/nasdexImg/bandProotocol@2x.png" alt=""></div>
+          <div><img src="../../assets/img/nasdexImg/Galaxy.png" alt=""></div>
+          <div><img src="../../assets/img/nasdexImg/xTwentyOne.png" alt=""></div>
+          <div><img src="../../assets/img/nasdexImg/OIG.png" alt=""></div>
+          <div><img src="../../assets/img/nasdexImg/Excalibur@2x.png" alt=""></div>
         </div>
         <div class="titleBusi">BUSINESS AND PRODUCT ROADMAP</div>
         <div class="BusiPage">
@@ -609,7 +615,8 @@ export default {
 <style lang="scss" scoped>
 .outer {
   width: 100%;
-  height: 6390px;
+  // height: 6390px;
+  height: 6630px;
   background-color: #041425;
   ::-webkit-scrollbar{
     width: 5px;
@@ -889,7 +896,7 @@ export default {
     }
     .main {
       width: 1120px;
-      height: 5800px;
+      height: 6040px;
       margin: 0 auto;
       margin-top: 30px;
       .title{
@@ -1796,20 +1803,26 @@ export default {
         margin-top: 87px;
       }
       .ParTitle{
-        background: url('../../assets/img/nasdexImg/juxingbeifen10@2x.png') no-repeat;
+        background: url('../../assets/img/nasdexImg/newbgOne.png') no-repeat;
         background-size: cover;
-        width: 1121px;
-        height: 300px;
+        width: 1120px;
+        height: 540px;
         margin-top: 40px;
         padding: 60px 59px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        // justify-content: space-between;
         align-content: space-between;
-        img{
-          width: 220px;
+        div{
+          width: 25%;
           height: 60px;
+          text-align: center;
+          img{
+            width: 220px;
+            height: 60px;
+          }
         }
+        
       }
       .titleBusi{
         width: 680px;
@@ -2047,7 +2060,7 @@ export default {
 @media screen and (max-width: 750px) {
   .outer {
     width: 100%;
-    height: 7350px;
+    height: 7520px;
     background-color: #041425;
     .core{
       width: 100%;
@@ -3008,15 +3021,20 @@ export default {
         }
         .ParTitle{
           // display: none;
-          background: url('../../assets/img/nasdexImg/h5juxingbeifen10@2x.png') no-repeat;
+          background: url('../../assets/img/nasdexImg/newh5bgOne.png') no-repeat;
           background-size: cover;
           width: 343px;
-          height: 290px;
+          // height: 290px;
+          height: 460px;
           padding: 30px 18px 40px 19px;
           margin: 0 auto;
-          img{
-            width: 146px;
+          div{
+            width: 50%;
             height: 40px;
+            img{
+              width: 146px;
+              height: 40px;
+            }
           }
         }
         .titleBusi{
