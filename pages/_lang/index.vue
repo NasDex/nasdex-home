@@ -23,18 +23,18 @@
             <img src="../../assets/img/nasdexImg/icon-menu@2x.png" alt="">
         </button>
         <div class="nav">
-          <div class="navOne" v-show="!isNavFontOne" @mouseenter="isNavFontOne = true" ><a href="##">ABOUT</a></div>
-          <div class="navOneA" v-show="isNavFontOne" @mouseleave="isNavFontOne = false"><a href="##" @click="changeAbout(850)">ABOUT</a></div>
-          <div class="navTwo" v-show="!isNavFontTwo" @mouseenter="isNavFontTwo = true" ><a href="##">HOW IT WORKS</a></div>
-          <div class="navTwoA" v-show="isNavFontTwo" @mouseleave="isNavFontTwo = false"><a href="##" @click="changeAbout(2700)">HOW IT WORKS</a></div>
-          <div class="navThree" v-show="!isNavFontThree" @mouseenter="isNavFontThree = true"><a href="##">TEAM</a></div>
-          <div class="navThreeA" v-show="isNavFontThree" @mouseleave="isNavFontThree = false"><a href="##" @click="changeAbout(3300)">TEAM</a></div>
-          <div class="navFour" v-show="!isNavFontFour" @mouseenter="isNavFontFour = true" ><a href="##">DOCS</a></div>
-          <div class="navFourA" v-show="isNavFontFour" @mouseleave="isNavFontFour = false"><a href="https://nasdexofficial.gitbook.io/nasdex" target="_blank">DOCS</a></div>
-          <div class="navFive" v-show="!isNavFontFive" @mouseenter="isNavFontFive = true" ><a href="##">WHITEPAPER</a></div>
-          <div class="navFiveA" v-show="isNavFontFive" @mouseleave="isNavFontFive = false"><a href="https://docsend.com/view/ahc6avcpf8qjjkcw" target="_blank">WHITEPAPER</a></div>
-          <div class="navSix" v-show="!isNavFontSix" @mouseenter="isNavFontSix = true"><a href="##">CONTACT US</a></div>
-          <div class="navSixA" v-show="isNavFontSix" @mouseleave="isNavFontSix = false"><a href="##" @click="changeAbout(8000)">CONTACT US</a></div>
+          <div class="navOne" v-if="!isNavFontOne" @mouseenter="isNavFontOne = true" ><a href="##">ABOUT</a></div>
+          <div class="navOneA" v-else="isNavFontOne" @mouseleave="isNavFontOne = false"><a href="##" @click="changeAbout(850)">ABOUT</a></div>
+          <div class="navTwo" v-if="!isNavFontTwo" @mouseenter="isNavFontTwo = true" ><a href="##">HOW IT WORKS</a></div>
+          <div class="navTwoA" v-else="isNavFontTwo" @mouseleave="isNavFontTwo = false"><a href="##" @click="changeAbout(2700)">HOW IT WORKS</a></div>
+          <div class="navThree" v-if="!isNavFontThree" @mouseenter="isNavFontThree = true"><a href="##">TEAM</a></div>
+          <div class="navThreeA" v-else="isNavFontThree" @mouseleave="isNavFontThree = false"><a href="##" @click="changeAbout(3300)">TEAM</a></div>
+          <div class="navFour" v-if="!isNavFontFour" @mouseenter="isNavFontFour = true" ><a href="##">DOCS</a></div>
+          <div class="navFourA" v-else="isNavFontFour" @mouseleave="isNavFontFour = false"><a href="https://nasdexofficial.gitbook.io/nasdex" target="_blank">DOCS</a></div>
+          <div class="navFive" v-if="!isNavFontFive" @mouseenter="isNavFontFive = true" ><a href="##">WHITEPAPER</a></div>
+          <div class="navFiveA" v-else="isNavFontFive" @mouseleave="isNavFontFive = false"><a href="https://docsend.com/view/ahc6avcpf8qjjkcw" target="_blank">WHITEPAPER</a></div>
+          <div class="navSix" v-if="!isNavFontSix" @mouseenter="isNavFontSix = true"><a href="##">CONTACT US</a></div>
+          <div class="navSixA" v-else="isNavFontSix" @mouseleave="isNavFontSix = false"><a href="##" @click="changeAbout(8000)">CONTACT US</a></div>
         </div>
         <!-- 右弹框 -->
         <div class="rightFrameAll" v-show="isRightFrame" @mousewheel.prevent @touchmove.prevent>
@@ -74,9 +74,11 @@
           </a>
           <div class="titleFour">
             <div class="left">
-              <a href="https://polygonscan.com/address/0xe8d17b127ba8b9899a160d9a07b69bca8e08bfc6#code">$NSDX Contract Address :</a>
-              <a href="https://polygonscan.com/address/0xe8d17b127ba8b9899a160d9a07b69bca8e08bfc6#code" target="_blank" class="leftOne" v-show="!isbfcShow" @mouseenter="isbfcShow = true" >0xe8d17b127ba8b9899a160d9a07b69bca8e08bfc6 <img src="../../assets/img/nasdexImg/polygon-logo@2x.png" ></a>
-              <a href="https://polygonscan.com/address/0xe8d17b127ba8b9899a160d9a07b69bca8e08bfc6#code" target="_blank" class="leftOneA" v-show="isbfcShow" @mouseleave="isbfcShow = false">0xe8d17b127ba8b9899a160d9a07b69bca8e08bfc6 <img src="../../assets/img/nasdexImg/skip@2x.png" ></a>
+              <a href="##">$NSDX Contract Address :</a>
+              <a href="https://polygonscan.com/address/0xe8d17b127ba8b9899a160d9a07b69bca8e08bfc6#code" target="_blank" class="leftOne" v-if="!isbfcShow" @mouseenter="isbfcShow = true" >0xe8d17b127ba8b9899a160d9a07b69bca8e08bfc6 <img src="../../assets/img/nasdexImg/polygon-logo@2x.png" ></a>
+              <a href="https://polygonscan.com/address/0xe8d17b127ba8b9899a160d9a07b69bca8e08bfc6#code" target="_blank" class="leftOneA" v-else="isbfcShow" @mouseleave="isbfcShow = false">0xe8d17b127ba8b9899a160d9a07b69bca8e08bfc6 <img src="../../assets/img/nasdexImg/skip@2x.png" ></a>
+              <a href="https://bscscan.com/token/0x417871f0682db63924b931fc16ba3ff40343cdcb" target="_blank" class="leftOne special" v-if="!isCurrency" @mouseenter="isCurrency = true">0x417871f0682db63924b931fc16ba3ff40343cdcb <img src="../../assets/img/nasdexImg/Currencytwo.png" ></a>
+              <a href="https://bscscan.com/token/0x417871f0682db63924b931fc16ba3ff40343cdcb" target="_blank" class="leftOneA" v-else="isCurrency" @mouseleave="isCurrency = false">0x417871f0682db63924b931fc16ba3ff40343cdcb <img src="../../assets/img/nasdexImg/skip@2x.png" ></a>
             </div>
           </div>
         </div>
@@ -472,6 +474,7 @@ export default {
       isBarFrame:false,
       isHeightTop:false,
       isbfcShow:false,
+      isCurrency:false,
       isJd:false,
       isBz:false,
       isGs:false,
@@ -997,6 +1000,12 @@ export default {
               width: 19px;
               height: 16px;
               margin: 1px 8px 0 0;
+            }
+          }
+          .special{
+            img{
+              width: 19px;
+              height: 19px;
             }
           }
         }
