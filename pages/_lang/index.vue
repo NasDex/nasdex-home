@@ -203,7 +203,7 @@
                 <div class="peopleTopLeftR">
                   <div class="LeftRtop">Henry Du</div>
                   <div class="LeftRcentre">Chief Product Officer</div>
-                  <div class="LeftRbottom">IT, Devops, Blockchain. Co-founder of crypto exchange ABIT.com. Lead a team of IT talents for blockchain projects including digital exchange, crypto wallet, DeFi program and more.</div>
+                  <div class="LeftRbottom">IT, Devops, Blockchain. Lead a team of IT talents for blockchain projects including digital exchange, crypto wallet, DeFi program and more.</div>
                 </div>
               </div>
               <div class="peopleBottomReight">
