@@ -23,18 +23,12 @@
             <img src="../../assets/img/nasdexImg/icon-menu@2x.png" alt="">
         </button>
         <div class="nav">
-          <div class="navOne" v-if="!isNavFontOne" @mouseenter="isNavFontOne = true" ><a href="##">ABOUT</a></div>
-          <div class="navOneA" v-else="isNavFontOne" @mouseleave="isNavFontOne = false"><a href="##" @click="changeAbout(850)">ABOUT</a></div>
-          <div class="navTwo" v-if="!isNavFontTwo" @mouseenter="isNavFontTwo = true" ><a href="##">HOW IT WORKS</a></div>
-          <div class="navTwoA" v-else="isNavFontTwo" @mouseleave="isNavFontTwo = false"><a href="##" @click="changeAbout(2700)">HOW IT WORKS</a></div>
-          <div class="navThree" v-if="!isNavFontThree" @mouseenter="isNavFontThree = true"><a href="##">TEAM</a></div>
-          <div class="navThreeA" v-else="isNavFontThree" @mouseleave="isNavFontThree = false"><a href="##" @click="changeAbout(3300)">TEAM</a></div>
-          <div class="navFour" v-if="!isNavFontFour" @mouseenter="isNavFontFour = true" ><a href="##">DOCS</a></div>
-          <div class="navFourA" v-else="isNavFontFour" @mouseleave="isNavFontFour = false"><a href="https://nasdexofficial.gitbook.io/nasdex" target="_blank">DOCS</a></div>
-          <div class="navFive" v-if="!isNavFontFive" @mouseenter="isNavFontFive = true" ><a href="##">WHITEPAPER</a></div>
-          <div class="navFiveA" v-else="isNavFontFive" @mouseleave="isNavFontFive = false"><a href="https://docsend.com/view/ahc6avcpf8qjjkcw" target="_blank">WHITEPAPER</a></div>
-          <div class="navSix" v-if="!isNavFontSix" @mouseenter="isNavFontSix = true"><a href="##">CONTACT US</a></div>
-          <div class="navSixA" v-else="isNavFontSix" @mouseleave="isNavFontSix = false"><a href="##" @click="changeAbout(8000)">CONTACT US</a></div>
+          <div class="navOne navAll"><a href="##" @click="changeAbout(850)">ABOUT</a></div>
+          <div class="navTwo navAll"><a href="##" @click="changeAbout(2700)">HOW IT WORKS</a></div>
+          <div class="navThree navAll"><a href="##" @click="changeAbout(3300)">TEAM</a></div>
+          <div class="navFour navAll"><a href="https://nasdexofficial.gitbook.io/nasdex" target="_blank">DOCS</a></div>
+          <div class="navFive navAll"><a href="https://docsend.com/view/ahc6avcpf8qjjkcw" target="_blank">WHITEPAPER</a></div>
+          <div class="navSix navAll"><a href="##" @click="changeAbout(8000)">CONTACT US</a></div>
         </div>
         <!-- 右弹框 -->
         <div class="rightFrameAll" v-show="isRightFrame" @mousewheel.prevent @touchmove.prevent>
@@ -79,6 +73,8 @@
               <a href="https://polygonscan.com/address/0xe8d17b127ba8b9899a160d9a07b69bca8e08bfc6#code" target="_blank" class="leftOneA" v-else="isbfcShow" @mouseleave="isbfcShow = false">0xe8d17b127ba8b9899a160d9a07b69bca8e08bfc6 <img src="../../assets/img/nasdexImg/skip@2x.png" ></a>
               <a href="https://bscscan.com/token/0x417871f0682db63924b931fc16ba3ff40343cdcb" target="_blank" class="leftOne special" v-if="!isCurrency" @mouseenter="isCurrency = true">0x417871f0682db63924b931fc16ba3ff40343cdcb <img src="../../assets/img/nasdexImg/Currencytwo.png" ></a>
               <a href="https://bscscan.com/token/0x417871f0682db63924b931fc16ba3ff40343cdcb" target="_blank" class="leftOneA" v-else="isCurrency" @mouseleave="isCurrency = false">0x417871f0682db63924b931fc16ba3ff40343cdcb <img src="../../assets/img/nasdexImg/skip@2x.png" ></a>
+              <a href="https://etherscan.io/token/0xe069af87450fb51fc0d0e044617f1c134163e591" target="_blank" class="leftOne special" v-if="!isCircular" @mouseenter="isCircular = true">0xe069af87450fb51fc0d0e044617f1c134163e591 <img src="../../assets/img/nasdexImg/ETH@2x.png" ></a>
+              <a href="https://etherscan.io/token/0xe069af87450fb51fc0d0e044617f1c134163e591" target="_blank" class="leftOneA" v-else="isCircular" @mouseleave="isCircular = false">0xe069af87450fb51fc0d0e044617f1c134163e591 <img src="../../assets/img/nasdexImg/skip@2x.png" ></a>
             </div>
           </div>
         </div>
@@ -463,18 +459,12 @@ export default {
       isRightFrame:false,
       showActive: 1,
       bannersImg:false,
-      isNavFontOne:false,
-      isNavFontTwo:false,
-      isNavFontThree:false,
-      isNavFontFour:false,
-      isNavFontFive:false,
-      isNavFontSix:false,
-      isBtn:false,
       isTitleThree:false,
       isBarFrame:false,
       isHeightTop:false,
       isbfcShow:false,
       isCurrency:false,
+      isCircular:false,
       isJd:false,
       isBz:false,
       isGs:false,
@@ -769,124 +759,14 @@ export default {
         img {
           height: 12px;
         }
-        .navOne {
-          width: 96px;
+        .navAll{
           display: inline-block;
           text-align: center;
-          a{
-            color: rgba(255,255,255,0.5);
-          }
-        }
-        .navOneA{
-          display: inline-block;
-          text-align: center;
-          width: 96px;
-          a{
-            color:rgba(255,255,255,1);
-          }
-        }
-        .navTwo {
-          display: inline-block;
-          text-align: center;
-          width: 155px;
-          a{
-            color: rgba(255,255,255,0.5);
-          }
-        }
-        .navTwoA {
-          display: inline-block;
-          text-align: center;
-          width: 155px;
-          a{
-            color: rgba(255,255,255,1);
-          }
-        }
-        .navThree {
-          display: inline-block;
-          text-align: center;
-          width: 88px;
-          a{
-            color: rgba(255,255,255,0.5);
-          }
-        }
-        .navThreeA {
-          display: inline-block;
-          text-align: center;
-          width: 88px;
-          a{
-            color: rgba(255,255,255,1);
-          }
-        }
-        .navFour {
-          display: inline-block;
-          text-align: center;
-          width: 88px;
-          a{
-            color: rgba(255,255,255,0.5);
-          }
-        }
-        .navFourA {
-          display: inline-block;
-          text-align: center;
-          width: 88px;
-          a{
-            color: rgba(255,255,255,1);
-          }
-        }
-        .navFive {
-          display: inline-block;
-          text-align: center;
-          width: 136px;
-          a{
-            color: rgba(255,255,255,0.5);
-          }
-        }
-        .navFiveA {
-          display: inline-block;
-          text-align: center;
-          width: 136px;
-          a{
-            color: rgba(255,255,255,1);
-          }
-        }
-        .navSix {
-          display: inline-block;
-          text-align: center;
-          width: 126px;
-          a{
-            color: rgba(255,255,255,0.5);
-          }
-        }
-        .navSixA {
-          display: inline-block;
-          text-align: center;
-          width: 126px;
-          a{
-            color: rgba(255,255,255,1);
-          }
-        }
-        .btnA{
-          width: 138px;
-          height: 40px;
-          line-height: 40px;
-          background: linear-gradient(236deg,rgba(0,212,227,0.8),rgba(0,130,255,0.8));
-          display: inline-block;
-          border-radius: 30px;
-          text-align: center;
-          span{
+          :hover{
             color: #fff;
           }
-        }
-        .btnB{
-          width: 138px;
-          height: 40px;
-          line-height: 40px;
-          background: linear-gradient(236deg,#00D4E3,#0082FF);
-          display: inline-block;
-          border-radius: 30px;
-          text-align: center;
-          span{
-            color: #fff;
+          a{
+            color: rgba(255,255,255,0.5);
           }
         }
       }
@@ -1006,6 +886,12 @@ export default {
             img{
               width: 19px;
               height: 19px;
+            }
+          }
+          .circular{
+            img{
+              width: 12px;
+              height: 12px;
             }
           }
         }
@@ -2353,6 +2239,14 @@ export default {
                 margin: 1px 0 0 0;
               }
             }
+            .special{
+              img{
+                width: 14px;
+                height: 14px;
+              }
+              
+            }
+
           }
         }
         .barFrame{
@@ -2365,7 +2259,7 @@ export default {
           background: url('../../assets/img/nasdexImg/h5juxing@2x.png') no-repeat;
           background-size: cover;
           // margin: 0 0 0 0;
-          margin: -20px auto 0;
+          margin: 30px auto 0;
           
           .barFrameLeft{
             width: 320px;
@@ -3136,7 +3030,7 @@ export default {
         width: 375px;
         height: 211px;
         // margin: 0 0 0 0;
-        margin: 30px auto 0;
+        margin: -22px auto 0;
         padding: 63px 47px 0;
         position: relative;
         z-index: 300;
