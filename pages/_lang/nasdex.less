@@ -1,0 +1,2167 @@
+.outer {
+    width: 100%;
+    height: 6630px;
+    background-color: #041425;
+    color: #fff;
+    font-family: 'Rubik-Regular';
+    ::-webkit-scrollbar{
+      width: 5px;
+    }
+    // 定义滚动条轨道内阴影与圆角
+    ::-webkit-scrollbar-track{
+      border-radius: 10px;
+      background-color: rgba(0,0,0,0.1);
+    }
+    // 定义滑块 内阴影+圆角
+    ::-webkit-slider-thumb{
+      border-radius: 10px;
+      -webkit-box-shadow:inset 0 0 6px rgba(16,15,15,0.3);
+      background-color: #000;
+    }
+    .core {
+      width: 100%;
+      position: relative;
+      .backgroundThree{
+          position:absolute;
+          width: 390px;
+          height: 682px;
+          background: linear-gradient(180deg,rgba(4,20,37,0.1),rgba(0,210,227,0.1));
+          filter: blur(50px);
+          right: 0;
+          top: 96px;
+      }
+      .backgroundFour{
+          position:absolute;
+          width: 626px;
+          height: 553px;
+          background: url('../../assets/img/nasdexImg/tuoyuanxing@2x(1).png') no-repeat;
+          background-size: cover;
+      }
+      .backgroundFive{
+          position:absolute;
+          width: 965px;
+          height: 1019px;
+          background: url('../../assets/img/nasdexImg/tuoyuanxingbefen3@2x.png') no-repeat;
+          background-size: cover;
+          top: 232px;
+      }
+      .backgroundSix{
+          position:absolute;
+          width: 555px;
+          height: 613px;
+          background: url('../../assets/img/nasdexImg/tuoyuanxingbefen9@2x.png') no-repeat;
+          background-size: cover;
+          top: 2397px;
+          right: 0;
+      }
+      .backgroundEight{
+          position:absolute;
+          right: 0;
+          top: 2998px;
+          width: 623px;
+          height: 1019px;
+          background: url('../../assets/img/nasdexImg/crossSection.png') no-repeat;
+          background-size: cover;
+      }
+      .backgroundNine{
+        position:absolute;
+        width: 487px;
+        height: 489px;
+        background: linear-gradient(180deg,rgba(4,20,37,0.1),rgba(0,210,227,0.1));
+        filter: blur(50px);
+        left: 113px;
+        top: 4042px;
+      }
+      .backgroundTen{
+        position:absolute;
+        z-index: 20;
+        width: 682px;
+        height: 682px;
+        background: linear-gradient(180deg,rgba(4,20,37,0.1),rgba(0,210,227,0.1));
+        filter: blur(50px);
+        right: 138px;
+        top: 4531px;
+      }
+      .backgroundOne{
+        position:absolute;
+        width: 949px;
+        height: 678px;
+        background: url('../../assets/img/nasdexImg/tuoyuanxing@2x.png') no-repeat;
+        background-size: cover;
+        z-index: 5;
+        right: 0;
+      }
+      .backgroundTwo{
+          position:absolute;
+          width: 100%;
+          height: 315px;
+          background: url('../../assets/img/nasdexImg/AbitTechMeteor.png') no-repeat;
+          background-size: cover;
+          z-index: 6;
+          left: 0;
+          top: 92px;
+      }
+      .backgroundMeteor{
+          position: absolute;
+          width: 730px;
+          height: 730px;
+          background: url('../../assets/img/nasdexImg/smallMeteo.png') no-repeat;
+          background-size: cover;
+          z-index: 6;
+          right: 90px;
+      }
+      .header {
+        margin: 0 auto;
+        width: 100%;
+        height: 64px;
+        line-height: 74px;
+        display: flex;
+        justify-content: space-between;
+        background: #041425;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        padding: 0 40px 0;
+        img {
+          width: 125px;
+          height: 24px;
+        }
+        .nav {
+          width: 600px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          z-index: 80;
+          font-size: 14px;
+          height: 64px;
+          font-family: 'Rubik-Regular';
+          img {
+            height: 12px;
+          }
+          .navAll{
+            display: inline-block;
+            text-align: center;
+            :hover{
+              color: #fff;
+            }
+            a{
+              color: rgba(255,255,255,0.5);
+            }
+          }
+        }
+        .Popout{
+          display: none;
+        }
+        .rightFrameAll{
+          display: none;
+        }
+      }
+      .main {
+        width: 1120px;
+        height: 6040px;
+        margin: 0 auto;
+        margin-top: 30px;
+        .title{
+          height: 438px;
+          padding: 60px 0 0 0;
+          position: relative;
+          z-index: 200;
+          margin-top: 64px;
+          .titleOne{
+            display: flex;
+            align-items: center;
+            span{
+              height: 46px;
+              font-size: 26px;
+              margin: 18px 20px 0 0;
+            }
+            img{
+              width: 276px;
+              height: 46px;
+            }
+          }
+          .titleTwo{
+            margin-top: 30px;
+            p{
+              font-size: 40px;
+              font-weight: bold;
+              margin-top: 15px;
+            }
+          }
+          .titleThree{
+            margin-top: 30px;
+            padding: 0 44px;
+            background: linear-gradient(236deg,#0082FF,#00D4E3);
+            border-radius: 37px;
+            display: inline-block;
+            line-height: 64px;
+            color: #fff;
+            font-size: 22px;
+          }
+          .titleThree:hover{
+            background: linear-gradient(236deg,#00D4E3,#0082FF);
+          }
+          .titleFour{
+            margin-top: 37px;
+            display: flex;
+            width: 410px;
+            a:nth-child(1){
+              font-size: 18px;
+              color: #fff;
+            }
+            a:nth-child(2),
+            a:nth-child(3){
+              width: 415px;
+              height: 16px;
+              font-size: 16px;
+              color: #A3A3A3;
+              display: block;
+              margin-top: 14px;
+              display: flex;
+              justify-content: space-between;
+              font-family: 'Rubik-Regular';
+              div{
+                width: 19px;
+                height: 16px;
+                margin: 1px 8px 0 0;
+                background-size: 100% 100%;
+              }
+            }
+            a:nth-child(2){
+              div{
+                background: url('../../assets/img/nasdexImg/polygon-logo@2x.png') no-repeat;
+                background-size: 100% 100%;
+              }
+            }
+            a:nth-child(3){
+              div{
+                background: url('../../assets/img/nasdexImg/Currencytwo.png') no-repeat;
+                background-size: 100% 100%;
+              }
+            }
+            a:nth-child(2):hover,
+            a:nth-child(3):hover{
+              color: #fff;
+              div{
+                background: url('../../assets/img/nasdexImg/skip@2x.png') no-repeat;
+                background-size: 100% 100%;
+              }
+            }
+          }
+        }
+        .barFrame{
+          width: 1060px;
+          height: 140px;
+          background: url('../../assets/img/nasdexImg/juxing@2x.png') no-repeat;
+          background-size: cover;
+          display: flex;
+          justify-content: space-between;
+          padding: 34px 70px 38px 90px;
+          position: relative;
+          z-index: 200;
+          margin: 188px auto 0;
+          .barFrameLeft{
+            width: 602px;
+            height: 68px;
+            line-height: 32px;
+            font-size: 24px;
+            color: #fff;
+            font-family: 'Rubik-Bold';
+          }
+          .barFrameReight{
+            width: 220px;
+            height: 64px;
+            line-height: 64px;
+            background: linear-gradient(236deg,#0082FF,#00D4E3);
+            border-radius: 37px;
+            text-align: center;
+            display: inline-block;
+            color: #fff;
+            font-size: 22px;
+            font-family: 'Rubik-Regular';
+          }
+          .barFrameReightA{
+            width: 220px;
+            height: 64px;
+            line-height: 64px;
+            background: linear-gradient(236deg,#00D4E3,#0082FF);
+            border-radius: 37px;
+            text-align: center;
+            display: inline-block;
+            color: #fff;
+            font-size: 22px;
+            font-family: 'Rubik-Regular';
+          }
+        }
+        .titleTopCenter{
+          width: 380px;
+          height: 58px;
+          line-height: 58px;
+          text-align: center;
+          font-size: 36px;
+          color: #fff;
+          font-weight: bold;
+          font-family: 'Rubik-Bold';
+          margin: 0 auto;
+          margin-top: 108px;
+          position: relative;
+          z-index: 200;
+        }
+        .exchange{
+          text-align: center;
+          width: 836px;
+          height: 78px;
+          font-size: 20px;
+          color: #c8c8c8;
+          margin: 0 auto;
+          margin-top: 22px;
+          position: relative;
+          z-index: 200;
+          font-family: 'Rubik-Regular';
+        }
+        .titleExisting{
+          width: 809px;
+          height: 36px;
+          font-size: 36px;
+          color: #fff;
+          margin-top: 160px;
+          font-family: 'Rubik-Bold';
+          position: relative;
+          z-index: 600;
+        }
+        .caseOne{
+          margin-top: 51px;
+          background: url('../../assets/img/nasdexImg/juxingbeifen2@2x.png') no-repeat;
+          background-size: cover;
+          width: 1120px;
+          height: 432px;
+          padding: 29px 51px 52px;
+          .caseOneTop{
+            width: 662px;
+            height: 24px;
+            font-size: 24px;
+            color: #fff;
+            margin: 0 auto;
+            font-family: 'Rubik-Bold';
+          }
+          .caseOneBottom{
+            width: 1018px;
+            height: 326px;
+            display: flex;
+            justify-content: space-between;
+            .caseOneBottomOne{
+              height: 206px;
+              width: 260px;
+              margin-top: 121px;
+              text-align: center;
+              img{
+                width: 83px;
+                height: 83px;
+              }
+              div{
+                margin-top: 13px;
+                font-size: 20px;
+                color: #fff;
+                font-family: 'Rubik-Regular';
+              }
+              p{
+                margin-top: 14px;
+                font-size: 16px;
+                color: #c8c8c8;
+                font-family: 'Rubik-Regular';
+              }
+            }
+            .caseOneBottomTwo{
+              height: 206px;
+              width: 260px;
+              margin-top: 53px;
+              text-align: center;
+              img{
+                width: 83px;
+                height: 83px;
+              }
+              div{
+                margin-top: 13px;
+                font-size: 20px;
+                color: #fff;
+                font-family: 'Rubik-Regular';
+              }
+              p{
+                margin-top: 14px;
+                font-size: 16px;
+                color: #c8c8c8;
+                font-family: 'Rubik-Regular';
+              }
+            }
+            .caseOneBottomThree{
+              height: 206px;
+              width: 260px;
+              margin-top: 121px;
+              text-align: center;
+              img{
+                width: 83px;
+                height: 83px;
+              }
+              div{
+                margin-top: 13px;
+                font-size: 20px;
+                color: #fff;
+                font-family: 'Rubik-Regular';
+              }
+              p{
+                margin-top: 14px;
+                font-size: 16px;
+                color: #c8c8c8;
+                font-family: 'Rubik-Regular';
+              }
+            }
+          }
+        }
+        .down{
+          width: 31px;
+          height: 40px;
+          margin: 0 auto;
+          img{
+            width: 31px;
+            height: 40px;
+          }
+        }
+        .caseTwo{
+          background: url('../../assets/img/nasdexImg/juxingbeifen2@2x.png') no-repeat;
+          background-size: cover;
+          width: 1120px;
+          height: 432px;
+          padding: 29px 51px 52px;
+          .caseOneTop{
+            width: 376px;
+            height: 24px;
+            font-size: 24px;
+            color: #fff;
+            font-family: 'Rubik-Bold';
+            margin: 0 auto;
+          }
+          .caseOneBottom{
+            width: 1018px;
+            height: 326px;
+            display: flex;
+            justify-content: space-between;
+            .caseOneBottomOne{
+              height: 206px;
+              width: 260px;
+              margin-top: 121px;
+              text-align: center;
+              img{
+                width: 83px;
+                height: 83px;
+              }
+              div{
+                margin-top: 13px;
+                font-size: 20px;
+                color: #fff;
+                font-family: 'Rubik-Regular';
+              }
+              p{
+                margin-top: 14px;
+                font-size: 16px;
+                color: #c8c8c8;
+                font-family: 'Rubik-Regular';
+              }
+            }
+            .caseOneBottomTwo{
+              height: 206px;
+              width: 260px;
+              margin-top: 53px;
+              text-align: center;
+              img{
+                width: 83px;
+                height: 83px;
+              }
+              div{
+                margin-top: 13px;
+                font-size: 20px;
+                color: #fff;
+                font-family: 'Rubik-Regular';
+              }
+              p{
+                margin-top: 14px;
+                font-size: 16px;
+                color: #c8c8c8;
+                font-family: 'Rubik-Regular';
+              }
+            }
+            .caseOneBottomThree{
+              height: 206px;
+              width: 260px;
+              margin-top: 121px;
+              text-align: center;
+              img{
+                width: 83px;
+                height: 83px;
+              }
+              div{
+                margin-top: 13px;
+                font-size: 20px;
+                color: #fff;
+                font-family: 'Rubik-Regular';
+              }
+              p{
+                margin-top: 14px;
+                font-size: 16px;
+                color: #c8c8c8;
+                font-family: 'Rubik-Regular';
+              }
+            }
+          }
+        }
+        .titleCore{
+          width: 809px;
+          height: 36px;
+          font-size: 36px;
+          color: #fff;
+          font-family: 'Rubik-Bold';
+          margin-top: 100px;
+        }
+        .interCut{
+          height: 240px;
+          width: 980px;
+          margin: 0 auto;
+          margin-top: 70px;
+          position: relative;
+          font-family: 'Rubik-Bold';
+          .interCutOne{
+            background: url('../../assets/img/nasdexImg/juxing@2x(1).png') no-repeat;
+            background-size: cover;
+            width: 532px;
+            height: 80px;
+            display: flex;
+          }
+          .interCutTwo{
+            background: url('../../assets/img/nasdexImg/juxing@2x(1).png') no-repeat;
+            background-size: cover;
+            width: 530px;
+            height: 80px;
+            position: absolute;
+            right: 0;
+            top: 80px;
+            display: flex;
+          }
+          .interCutThree{
+            background: url('../../assets/img/nasdexImg/juxing@2x(1).png') no-repeat;
+            background-size: cover;
+            width: 532px;
+            height: 80px;
+            position: absolute;
+            top: 160px;
+            display: flex;
+          }
+          img{
+            width: 70px;
+            height: 70px;
+            margin: 5px 0 0 6px;
+          }
+          .tcp{
+            width: 280px;
+            height: 52px;
+            line-height: 30px;
+            color: #fff;
+            font-size: 16px;
+            margin: 9px 0 0 17px;
+            font-family: 'Rubik-Regular';
+          }
+        }
+        .banners{
+          background: url('../../assets/img/nasdexImg/banners.png') no-repeat;
+          background-size: cover;
+          width: 1125px;
+          height: 572px;
+          margin-top: 90px;
+          position: relative;
+          z-index: 300;
+          .bannerLeft{
+            position: absolute;
+            bottom: 30px;
+            left: 527px;
+            img{
+              width: 13px;
+              height: 13px;
+            }
+          }
+          .bannerReight{
+            position: absolute;
+            bottom: 30px;
+            left: 554px;
+            img{
+              width: 13px;
+              height: 13px;
+            }
+          }
+        }
+        .banner{
+          background: url('../../assets/img/nasdexImg/banner.png') no-repeat;
+          background-size: cover;
+          width: 1125px;
+          height: 572px;
+          margin-top: 90px;
+          position: relative;
+          z-index: 300;
+          .bannerLeft{
+            position: absolute;
+            bottom: 30px;
+            left: 527px;
+            img{
+              width: 13px;
+              height: 13px;
+            }
+          }
+          .bannerReight{
+            position: absolute;
+            bottom: 30px;
+            left: 554px;
+            img{
+              width: 13px;
+              height: 13px;
+            }
+          }
+        }
+        .titleOur{
+          width: 210px;
+          height: 36px;
+          font-size: 36px;
+          font-weight: bold;
+          color: #fff;
+          font-family: 'Rubik-Bold';
+          margin-top: 90px;
+        }
+        .peoplePage{
+          background: url('../../assets/img/nasdexImg/juxingbeifen7@2x.png') no-repeat;
+          background-size: cover;
+          width: 1120px;
+          height: 600px;
+          margin-top: 48px;
+          padding: 53px 60px 59px;
+          display: flex;
+          flex-wrap: wrap;
+          align-content: space-between;
+          position: relative;
+          z-index: 300;
+          .peopleTop{
+            width: 1000px;
+            height: 216px;
+            display: flex;
+            justify-content: space-between;
+            .peopleTopLeft{
+              width: 444px;
+              height: 216px;
+              display: flex;
+              justify-content: space-between;
+              .peopleTopLeftL{
+                width: 120px;
+                height: 216px;
+                img{
+                  width: 120px;
+                  height: 120px;
+                }
+                .peoplebtnTop{
+                  width: 82px;
+                  height: 24px;
+                  border-radius: 12px;
+                  background: url('../../assets/img/nasdexImg/Deutsche.png') no-repeat;
+                  background-size: cover;
+                  margin: 20px auto 0;
+                }
+                .peoplebtnBottom{
+                  width: 82px;
+                  height: 24px;
+                  border-radius: 12px;
+                  background: url('../../assets/img/nasdexImg/Morgan.png') no-repeat;
+                  background-size: cover;
+                  margin: 16px auto 0;
+                }
+              }
+              .peopleTopLeftR{
+                width: 304px;
+                display: flex;
+                flex-wrap: wrap;
+                align-content: space-around;
+                .LeftRtop{
+                  font-size: 20px;
+                  font-weight: bold;
+                  color: #fff;
+                  width: 130px;
+                  display: flex;
+                  align-items: flex-end;
+                  font-family: 'Rubik-Regular';
+                  .JD{
+                    height: 24px;
+                    img{
+                      width: 26px;
+                      height: 24px;
+                      margin-left: 9px;
+                    }
+                  }
+                  .JDA{
+                    height: 24px;
+                    img{
+                      width: 26px;
+                      height: 24px;
+                      margin-left: 9px;
+                    }
+                  }
+                }
+                .LeftRcentre{
+                  width: 195px;
+                  font-size: 16px;
+                  color: #c8c8c8;
+                  font-family: 'Rubik-Regular';
+                }
+                .LeftRbottom{
+                  width: 304px;
+                  line-height: 25px;
+                  font-size: 14px;
+                  color: #fff;
+                  font-family: 'Rubik-Regular';
+                }
+              }
+            }
+            .peopleTopReight{
+              width: 444px;
+              height: 192px;
+              display: flex;
+              justify-content: space-between;
+              .peopleTopLeftL{
+                width: 120px;
+                height: 216px;
+                img{
+                  width: 120px;
+                  height: 120px;
+                }
+                .peoplebtnTop{
+                  width: 82px;
+                  height: 24px;
+                  border-radius: 12px;
+                  background: url('../../assets/img/nasdexImg/dadventures.png') no-repeat;
+                  background-size: cover;
+                  margin: 20px auto 0;
+                }
+                .peoplebtnBottom{
+                  width: 82px;
+                  height: 24px;
+                  border-radius: 12px;
+                  background: url('../../assets/img/nasdexImg/Dubri.png') no-repeat;
+                  background-size: cover;
+                  margin: 16px auto 0;
+                }
+              }
+              .peopleTopLeftR{
+                width: 304px;
+                display: flex;
+                flex-wrap: wrap;
+                align-content: space-around;
+                .LeftRtop{
+                  font-size: 20px;
+                  font-weight: bold;
+                  color: #fff;
+                  width: 180px;
+                  display: flex;
+                  align-items: flex-end;
+                  font-family: 'Rubik-Regular';
+                  .BZ{
+                    height: 24px;
+                    img{
+                      width: 26px;
+                      height: 24px;
+                      margin-left: 9px;
+                    }
+                  }
+                  .BZA{
+                    height: 24px;
+                    img{
+                      width: 26px;
+                      height: 24px;
+                      margin-left: 9px;
+                    }
+                  }
+                }
+                .LeftRcentre{
+                  width: 195px;
+                  font-size: 16px;
+                  color: #c8c8c8;
+                  font-family: 'Rubik-Regular';
+                }
+                .LeftRbottom{
+                  width: 304px;
+                  line-height: 25px;
+                  font-size: 14px;
+                  color: #fff;
+                  font-family: 'Rubik-Regular';
+                }
+              }
+            }
+          }
+          .peopleBottom{
+            width: 1000px;
+            height: 216px;
+            display: flex;
+            justify-content: space-between;
+            .peopleBottomLeft{
+              width: 444px;
+              height: 192px;
+              display: flex;
+              justify-content: space-between;
+              .peopleTopLeftL{
+                width: 120px;
+                height: 216px;
+                img{
+                  width: 120px;
+                  height: 120px;
+                }
+                .peoplebtnTop{
+                  width: 82px;
+                  height: 24px;
+                  border-radius: 12px;
+                  background: url('../../assets/img/nasdexImg/AbitTech.png') no-repeat;
+                  background-size: cover;
+                  margin: 20px auto 0;
+                }
+              }
+              .peopleTopLeftR{
+                width: 304px;
+                display: flex;
+                flex-wrap: wrap;
+                align-content: space-around;
+                .LeftRtop{
+                  font-size: 20px;
+                  font-weight: bold;
+                  color: #fff;
+                  width: 130px;
+                  font-family: 'Rubik-Regular';
+                }
+                .LeftRcentre{
+                  width: 195px;
+                  font-size: 16px;
+                  color: #c8c8c8;
+                  font-family: 'Rubik-Regular';
+                }
+                .LeftRbottom{
+                  width: 304px;
+                  line-height: 25px;
+                  font-size: 14px;
+                  color: #fff;
+                  font-family: 'Rubik-Regular';
+                }
+              }
+            }
+            .peopleBottomReight{
+              width: 444px;
+              height: 168px;
+              display: flex;
+              justify-content: space-between;
+              .peopleTopLeftL{
+                width: 120px;
+                height: 216px;
+                img{
+                  width: 120px;
+                  height: 120px;
+                }
+              }
+              .peopleTopLeftR{
+                width: 304px;
+                display: flex;
+                flex-wrap: wrap;
+                align-content: space-around;
+                .LeftRtop{
+                  font-size: 20px;
+                  font-weight: bold;
+                  color: #fff;
+                  width: 150px;
+                  display: flex;
+                  align-items: flex-end;
+                  font-family: 'Rubik-Regular';
+                  .GS{
+                    height: 24px;
+                    img{
+                      width: 26px;
+                      height: 24px;
+                      margin-left: 9px;
+                    }
+                  }
+                  .GSA{
+                    height: 24px;
+                    img{
+                      width: 26px;
+                      height: 24px;
+                      margin-left: 9px;
+                    }
+                  }
+                }
+                .LeftRcentre{
+                  width: 195px;
+                  font-size: 16px;
+                  color: #c8c8c8;
+                  font-family: 'Rubik-Regular';
+                }
+                .LeftRbottom{
+                  width: 304px;
+                  line-height: 25px;
+                  font-size: 14px;
+                  color: #fff;
+                  font-family: 'Rubik-Regular';
+                }
+              }
+            }
+          }
+          .LeftRtop{
+            font-family: 'Rubik-Bold';
+          }
+        }
+        .titleAdv{
+          width: 210px;
+          height: 36px;
+          font-size: 36px;
+          font-family: 'Rubik-Bold';
+          font-weight: bold;
+          color: #fff;
+          margin-top: 88px;
+        }
+        .peopleDetail{
+          background: url('../../assets/img/nasdexImg/juxingbeifen9@2x.png') no-repeat;
+          background-size: cover;
+          width: 1120px;
+          height: 471px;
+          margin-top: 40px;
+          padding: 53px 60px 92px;
+          display: flex;
+          justify-content: space-between;
+          position: relative;
+          z-index: 500;
+          .peopleDetailPage{
+            height: 294px;
+            width: 280px;
+            .detaileTop{
+              color: #fff;
+              font-size: 20px;
+              font-weight: bold;
+              text-align: center;
+              margin-top: 20px;
+              display: flex;
+              align-items: flex-end;
+              justify-content: center;
+              font-family: 'Rubik-Regular';
+              .RW,.RWA,.TT,.TTA,.AF,.AFA{
+                height: 24px;
+                width: 26px;
+                img{
+                  width: 26px;
+                  height: 24px;
+                  margin-left: 9px;
+                }
+              }
+            }
+            .detaileCenter{
+              font-size: 16px;
+              color: #c8c8c8;
+              text-align: center;
+              margin-top: 14px;
+              font-family: 'Rubik-Regular';
+            }
+            .detaileBottom{
+              font-size: 14px;
+              line-height: 24px;
+              text-align: center;
+              color: #fff;
+              margin-top: 12px;
+              font-family: 'Rubik-Regular';
+            }
+          }
+          img{
+            width: 121px;
+            height: 120px;
+            text-align: center;
+            margin-left: 80px;
+          }
+          .detaileTop{
+            font-family: 'Rubik-Bold';
+          }
+        }
+        .titlePar{
+          width: 650px;
+          height: 36px;
+          font-size: 36px;
+          font-family: 'Rubik-Bold';
+          font-weight: bold;
+          color: #fff;
+          margin-top: 87px;
+        }
+        .ParTitle{
+          background: url('../../assets/img/nasdexImg/newbgOne.png') no-repeat;
+          background-size: cover;
+          width: 1120px;
+          height: 540px;
+          margin-top: 40px;
+          padding: 60px 59px;
+          display: flex;
+          flex-wrap: wrap;
+          align-content: space-between;
+          div{
+            width: 25%;
+            height: 60px;
+            text-align: center;
+            img{
+              width: 220px;
+              height: 60px;
+            }
+          }
+          
+        }
+        .titleBusi{
+          width: 680px;
+          height: 36px;
+          font-size: 36px;
+          font-weight: bold;
+          color: #fff;
+          margin-top: 90px;
+          font-family: 'Rubik-Bold';
+        }
+        .BusiPage{
+          width: 1120px;
+          height: 565px;
+          margin-top: 80px;
+          display: flex;
+          justify-content: space-between;
+          position: relative;
+          .busiLine{
+            position: absolute;
+            top: -16px;
+            left: 0;
+            width: 1099px;
+            height: 2px;
+            img{
+              width: 1099px;
+              height: 2px;
+            }
+          }
+          .BusiAll{
+            background: url('../../assets/img/nasdexImg/juxingbeifen12@2x.png') no-repeat;
+            background-size: cover;
+            width: 266px;
+            height: 565px;
+            padding: 26px 35px 102px 20px;
+            position: relative;
+            .BusiRound{
+              position: absolute;
+              width: 44px;
+              height: 44px;
+              left: 111px;
+              top:-18px
+            }
+            .BusiTop{
+              width: 120px;
+              text-align: center;
+              height: 24px;
+              font-family: 'Rubik-Bold';
+              font-weight: bold;
+              color: #fff;
+              font-size: 20px;
+              margin: 0 auto;
+            }
+            .BusiCenter{
+              font-family: 'Rubik-Regular';
+              .BusiCenterOne{
+                font-size: 16px;
+                color: #0083fe;
+                margin:20px 0 0 12px ;
+              }
+              img{
+                width: 8px;
+                height: 8px;
+                margin: 3px 4px 0 0;
+              }
+              .BusiCenterAll{
+                display: flex;
+                margin-top: 10px;
+                p{
+                  width: 198px;
+                  height: 32px;
+                  color: #fff;
+                  font-size: 12px;
+                }
+              }
+            }
+            .BusiBottom{
+              font-family: 'Rubik-Regular';
+              .BusiBottomOne{
+                font-size: 16px;
+                color: #00efff;
+                margin-top: 20px;
+                padding-left: 12px;
+              }
+              img{
+                width: 8px;
+                height: 8px;
+                margin: 3px 4px 0 0;
+              }
+              .BusiBottomAll{
+                display: flex;
+                margin-top: 10px;
+                p{
+                  width: 198px;
+                  height: 32px;
+                  color: #fff;
+                  font-size: 12px;
+                }
+              }
+              .TopOne{
+                margin-top: 28px;
+              }
+              .TopTwo{
+                margin-top: 45px;
+              }
+            }
+          }
+          .BusiPageTwo{
+            .BusiBottom{
+              .Integra{
+                margin-top: 58px;
+              }
+              .TopTwo{
+                margin-top: 15px;
+              }
+              .nasdexMvp{
+                margin-top: 25px;
+              }
+            }
+          }
+          .BusiPageThree{
+            .BusiBottom{
+              .BusiBottomOne{
+                margin-top: 10px;
+              }
+              .TopOne{
+                margin-top: 18px;
+              }
+              .refineOne{
+                margin-top: 26px;
+              }
+              .TopTwo{
+                margin-top: 10px;
+              }
+              .rurtherOne{
+                margin-top: 20px;
+              }
+            }
+            
+          }
+          .BusiPageFour{
+            .BusiCenter{
+              .addTop{
+                margin-top: 25px;
+              }
+            }
+            .BusiBottom{
+              .implementTop{
+                margin-top: 70px;
+              }
+            }
+          }
+        }
+      }
+      .footer {
+        width: 1021px;
+        height: 425px;
+        background: url('../../assets/img/nasdexImg/footer@2x.png') no-repeat;
+        background-size: cover;
+        margin: 102px auto 0;
+        padding: 270px 286px 30px 348px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        .footerTop{
+          img{
+            width: 125px;
+            height: 24px;
+          }
+        }
+        .footerTopTwo{
+          width: 270px;
+          height: 17px;
+          text-align: center;
+          font-size: 14px;
+          font-family: "Rubik-Regular";
+          color: rgba(255,255,255,0.7);
+          margin-top: 8px;
+        }
+        .footerEnter{
+          width: 205px;
+          height: 24px;
+          margin-top: 12px;
+          display: flex;
+          justify-content: space-evenly;
+          img{
+            width: 24px;
+            height: 24px;
+          }
+        }
+        .footerBottom{
+          width: 234px;
+          height: 17px;
+          font-size: 14px;
+          font-family: "Rubik-Regular";
+          color: rgba(255,255,255,0.7);
+          margin-top: 18px;
+        }
+      }
+    }
+  }
+  
+  @keyframes bounce-down {
+    25% {
+      transform: translateY(-4px);
+    }
+    50%,
+    100% {
+      transform: translateY(0);
+    }
+    75% {
+      transform: translateY(4px);
+    }
+  }
+  @keyframes bounce-opcity {
+    25% {}
+    50% {}
+    75% {}
+    100% {}
+  }
+  @media screen and (max-width: 750px) {
+    .outer {
+      width: 100%;
+      height: 7520px;
+      background-color: #041425;
+      .core{
+        width: 100%;
+        position: relative;
+        // 背景图区域
+        .backgroundThree{
+          display: none;
+          position:absolute;
+          width: 257px;
+          height: 266px;
+          background: url('../../assets/img/nasdexImg/h5tuoyuan4@2x.png') no-repeat;
+          background-size: cover;
+          z-index: 5;
+          left: 0;
+        }
+        .backgroundFour{
+          display: none;
+          position:absolute;
+          width: 257px;
+          height: 266px;
+          background: url('../../assets/img/nasdexImg/h5tuoyuan@2x.png') no-repeat;
+          background-size: cover;
+          z-index: 5;
+          right: 50;
+        }
+        .backgroundFive{
+          position:absolute;
+          width: 348px;
+          height: 469px;
+          background: url('../../assets/img/nasdexImg/h5tuoyuan3@2x.png') no-repeat;
+          background-size: cover;
+          z-index: 5;
+          top: 150px;
+        } 
+        .backgroundSix{
+          position:absolute;
+          width: 104px;
+          height: 367px;
+          background: url('../../assets/img/nasdexImg/h5TwoYuanBf.png') no-repeat;
+          background-size: cover;
+          top: 2750px;
+          right: 0;
+        }
+        .backgroundSeven,.backgroundEight,.backgroundNine,.backgroundTen{
+          display: none;
+        }
+        .backgroundOne{
+          position:absolute;
+          width: 190px;
+          height: 220px;
+          background: url('../../assets/img/nasdexImg/h5TwoYuan.png') no-repeat;
+          background-size: cover;
+          z-index: 5;
+          right: 0;
+          top: 0;
+        }
+        .backgroundTwo{
+          display: none;
+        }
+        .backgroundMeteor{
+          display: none;
+        }
+        .header{
+          width: 100%;
+          height: 64px;
+          padding: 0px 16px;
+          .svg{
+            position: relative;
+            z-index: 600;
+            margin-left: 0;
+          }
+          .nav{
+            display: none;
+          }
+          .Popout{
+            display: block;
+            width: 24px;
+            background: #041425;
+            position: relative;
+            z-index: 80;
+            img{
+              width: 24px;
+              height: 22px;
+            }
+          }
+          .rightFrameAll{
+            width: 100%;
+            height: 812px;
+            background: rgba(0,0,0,0.5);
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1001;
+            display: flex;
+            .rightFrame{
+                display: block;
+              position: absolute;
+              width: 220px;
+              height: 812px;
+              background: #032543;
+              right: 0;
+              top: 0;
+              z-index: 500;
+              padding: 0 41px;
+              .frameTop{
+                margin: 0 0 0 132px;
+                height: 24px;
+                img{
+                  width: 24px;
+                  height: 24px;
+                }
+              }
+              .frameBottom{
+                width: 110px;
+                height: 380px;
+                margin: 0 auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding-top: 40px;
+                font-size: 14px;
+                font-family: 'Rubik-Regular';
+                .navOne,.navTwo,.navThree,.navFour,.navFive,.navSix{
+                  height: 12px;
+                  width: 100px;
+                  display: block;
+                  color: #fff;
+                  text-align: center;
+                }
+                .navOne{
+                  width: 48px !important;
+                }
+                .navTwo{
+                  width: 120px !important;
+                  height: 14px !important;
+                }
+                .navFour{
+                  height: 10px !important;
+                }
+              }
+              .btn{
+                width: 138px;
+                height: 40px;
+                line-height: 40px;
+                background: linear-gradient(236deg,#00D4E3,#0082FF);
+                display: inline-block;
+                border-radius: 30px;
+                text-align: center;
+                img {
+                  width: 88px;
+                }
+              }
+            }
+          }
+        }
+        
+        .main{
+          width: 100%;
+          height: 100%;
+          margin: 0 auto;
+          .title{
+            width:340px;
+            margin: 64px auto 0;
+            .titleOne{
+                height: 26px;
+              width: 280px;
+              justify-content: space-between;
+              span{
+                height: 16px;
+                width: 94px;
+                font-size: 16px;
+                margin: 0 0 0 0;
+              }
+              img{
+                width: 155px;
+                height: 26px;
+              }
+            }
+            .titleTwo{
+                margin-top: 30px;
+              p{
+                font-size: 24px;
+              }
+            }
+            .titleThree{
+              margin-top: 30px;
+              padding: 0 20px;
+              font-size: 12px;
+              line-height: 34px;
+            }
+            .titleThreeA{
+                margin-top: 30px;
+              width: 120px;
+              height: 34px;
+              font-size: 12px;
+              line-height: 34px;
+            }
+            .titleFour{
+                margin-top: 30px;
+              width: 340px;
+              p{
+                font-size: 14px;
+              }
+              a:nth-child(2),
+              a:nth-child(3){
+                width: 308px;
+                height: 12px;
+                font-size: 12px;
+                div{
+                  width: 14px;
+                  height: 12px;
+                  margin: 1px 0 0 0;
+                }
+              }
+            }
+          }
+          .barFrame{
+            width: 355px;
+            height: 140px;
+            padding: 26px 31px 0 32px;
+            flex-wrap: wrap;
+            justify-content: center;
+            background: url('../../assets/img/nasdexImg/h5juxing@2x.png') no-repeat;
+            background-size: cover;
+            margin: 30px auto 0;
+            .barFrameLeft{
+              width: 320px;
+              height: 40px;
+              font-size: 12px;
+              text-align: center;
+              line-height: 20px;
+            }
+            .barFrameReight{
+              width: 120px;
+              height: 34px;
+              font-size: 12px;
+              line-height: 34px;
+            }
+            .barFrameReightA{
+              width: 120px;
+              height: 34px;
+              font-size: 12px;
+              line-height: 34px;
+            }
+          }
+          .titleTopCenter{
+            width: 200px;
+            height: 22px;
+            font-size: 22px;
+            line-height: 10px;
+            margin: 57px auto 0;
+          }
+          .exchange{
+            width: 334px;
+            height: 120px;
+            font-size: 14px;
+            margin: 12px auto 0;
+  
+          }
+          .titleExisting{
+            width: 315px;
+            height: 64px;
+            font-size: 22px;
+            margin: 50px auto 0;
+          }
+          .caseOne{
+            margin-top: 20px;
+            background: url('../../assets/img/nasdexImg/h5ninejuxingOne.png') no-repeat;
+            background-size: cover;
+            width: 343px;
+            height: 610px;
+            margin: 0 auto;
+            padding: 20px 18px 0;
+            .caseOneTop{
+              width: 307px;
+              height: 40px;
+              font-size: 16px;
+              text-align: center;
+            }
+            .caseOneBottom{
+              width: 280px;
+              flex-wrap: wrap;
+              margin: 0 auto;
+              .caseOneBottomOne{
+                width: 280px;
+                height: 160px;
+                margin: 0 auto;
+                margin-top: 35px;
+                text-align: center;
+                img{
+                  width: 62px;
+                  height: 62px;
+                }
+                div{
+                  margin-top: 14px;
+                  font-size: 14px;
+                }
+                p{
+                  margin-top: 14px;
+                  font-size: 12px;
+                  width: 280px;
+                }
+              }
+              .caseOneBottomTwo{
+                width: 280px;
+                height: 160px;
+                margin: 0 auto;
+                margin-top: 0px;
+                text-align: center;
+                img{
+                  width: 62px;
+                  height: 62px;
+                }
+                div{
+                  margin-top: 14px;
+                  font-size: 14px;
+                }
+                p{
+                  margin-top: 14px;
+                  font-size: 12px;
+                }
+              }
+              .caseOneBottomThree{
+                width: 280px;
+                height: 160px;
+                margin: 0 auto;
+                margin-top: 0px;
+                text-align: center;
+                img{
+                  width: 62px;
+                  height: 62px;
+                }
+                div{
+                  margin-top: 14px;
+                  font-size: 14px;
+                }
+                p{
+                  margin-top: 14px;
+                  font-size: 12px;
+                  width: 270px;
+                }
+              }
+            }
+          }
+          .caseTwo{
+            margin-top: 33px;
+            background: url('../../assets/img/nasdexImg/h5juxingbeifen3@2x.png') no-repeat;
+            background-size: cover;
+            width: 343px;
+            height: 590px;
+            margin: 0 auto;
+            padding: 20px 18px 0;
+            .caseOneTop{
+              width: 307px;
+              height: 40px;
+              font-size: 16px;
+              text-align: center;
+            }
+            .caseOneBottom{
+              width: 260px;
+              flex-wrap: wrap;
+              margin: 0 auto;
+              .caseOneBottomOne{
+                width: 260px;
+                height: 160px;
+                margin: 0 auto;
+                margin-top: 35px;
+                text-align: center;
+                img{
+                  width: 62px;
+                  height: 62px;
+                }
+                div{
+                  margin-top: 14px;
+                  font-size: 14px;
+                }
+                p{
+                  margin-top: 14px;
+                  font-size: 12px;
+                  width: 280px;
+                }
+              }
+              .caseOneBottomTwo{
+                width: 260px;
+                height: 160px;
+                margin: 0 auto;
+                margin-top: 0px;
+                text-align: center;
+                img{
+                  width: 62px;
+                  height: 62px;
+                }
+                div{
+                  margin-top: 14px;
+                  font-size: 14px;
+                }
+                p{
+                  margin-top: 14px;
+                  font-size: 12px;
+                }
+              }
+              .caseOneBottomThree{
+                width: 260px;
+                height: 160px;
+                margin: 0 auto;
+                margin-top: 0px;
+                text-align: center;
+                img{
+                  width: 62px;
+                  height: 62px;
+                }
+                div{
+                  margin-top: 14px;
+                  font-size: 14px;
+                }
+                p{
+                  margin-top: 14px;
+                  font-size: 12px;
+                  width: 270px;
+                }
+              }
+            }
+          }
+          .titleCore{
+            width: 315px;
+            height: 64px;
+            font-size: 22px;
+            margin: 40px auto 0;
+          }
+          .interCut{
+            width: 343px;
+            margin: 0 auto;
+            margin-top: 20px;
+            position: relative;
+            .interCutOne{
+              width: 343px;
+              height: 70px;
+              background: url('../../assets/img/nasdexImg/h5juxing@2x(1).png') no-repeat;
+              background-size: cover;
+              margin: 0 auto;
+            }
+            .interCutTwo{
+              width: 343px;
+              height: 70px;
+              left: 0;
+              background: url('../../assets/img/nasdexImg/h5juxing@2x(1).png') no-repeat;
+              background-size: cover;
+              margin: 0 auto;
+            }
+            .interCutThree{
+              width: 343px;
+              height: 70px;
+              background: url('../../assets/img/nasdexImg/h5juxing@2x(1).png') no-repeat;
+              background-size: cover;
+              margin: 0 auto;
+            }
+            img{
+              width: 60px;
+              height: 60px;
+            }
+            .tcp{
+              width: 230px;
+              height: 48px;
+              line-height: 20px;
+              font-size: 14px;
+            }
+          }
+          .banners{
+            margin: 0 auto;
+            width: 343px;
+            height: 174.48px;
+            margin-top: 30px;
+            .bannerLeft{
+              left: 163px;
+              bottom: 8px;
+              img{
+                width: 6px;
+                height: 6px;
+              }
+            }
+            .bannerReight{
+              left: 175px;
+              bottom: 8px;
+              img{
+                width: 6px;
+                height: 6px;
+              }
+            }
+          }
+          .banner{
+            margin: 0 auto;
+            width: 343px;
+            height: 174.48px;
+            margin-top: 30px;
+            .bannerLeft{
+              left: 163px;
+              bottom: 8px;
+              img{
+                width: 6px;
+                height: 6px;
+              }
+            }
+            .bannerReight{
+              left: 175px;
+              bottom: 8px;
+              img{
+                width: 6px;
+                height: 6px;
+              }
+            }
+          }
+          .titleOur{
+            width: 315px;
+            height: 64px;
+            font-size: 22px;
+            margin: 40px auto 0;
+          }
+          .peoplePage{
+            background: url('../../assets/img/nasdexImg/h5ninejuxingTwo.png') no-repeat;
+            background-size: cover;
+            width: 343px;
+            height: 780px;
+            margin-top: 20px;
+            margin: 0 auto;
+            padding: 20px 25px 0 20px;
+            align-content: flex-start;
+            .peopleTop{
+                width: 343px;
+              height: 368px;
+              flex-wrap: wrap;
+              align-content: space-around;
+              .peopleTopLeft{
+                width: 315px;
+                height: 186px;
+                margin: 0 auto;
+                .peopleTopLeftL{
+                  width: 60px;
+                  height: 60px;
+                  img{
+                    width: 60px;
+                    height: 60px;
+                    margin-top: 10px;
+                  }
+                  .peoplebtnTop{
+                            width: 60px;
+                    height: 17.5px;
+                    margin: 10px auto 0;
+                  }
+                  .peoplebtnBottom{
+                            width: 60px;
+                    height: 17.5px;
+                  }
+                }
+                .peopleTopLeftR{
+                  width: 228px;
+                  height: 186px;
+                  .LeftRtop{
+                    font-size: 16px;
+                    width: 228px;
+                    .JD{
+                      height: 16px;
+                      margin-bottom: 2px;
+                      img{
+                        margin-left: 4px;
+                        width: 16px;
+                        height: 16px;
+                      }
+                    }
+                    .JDA{
+                      height: 16px;
+                      margin-bottom: 2px;
+                      img{
+                        margin-left: 4px;
+                        width: 16px;
+                        height: 16px;
+                      }
+                    }
+                  }
+                  .LeftRcentre{
+                    font-size: 14px;
+                    width: 228px;
+                  }
+                  .LeftRbottom{
+                    font-size: 12px;
+                    width: 228px;
+                    line-height: 20px;
+                  }
+                }
+              }
+              .peopleTopReight{
+                margin: 0 auto;
+                width: 315px;
+                height: 146px;
+                .peopleTopLeftL{
+                  width: 60px;
+                  height: 60px;
+                  img{
+                    width: 60px;
+                    height: 60px;
+                    margin-top: 10px;
+                  }
+                  .peoplebtnTop{
+                            width: 60px;
+                    height: 17.5px;
+                    margin: 10px auto 0;
+                  }
+                  .peoplebtnBottom{
+                            width: 60px;
+                    height: 17.5px;
+                  }
+                }
+                .peopleTopLeftR{
+                  width: 228px;
+                  height: 146px;
+                  .LeftRtop{
+                    font-size: 16px;
+                    width: 228px;
+                    .BZ{
+                      height: 16px;
+                      margin-bottom: 2px;
+                      img{
+                        margin-left: 4px;
+                        width: 16px;
+                        height: 16px;
+                      }
+                    }
+                    .BZA{
+                      height: 16px;
+                      margin-bottom: 2px;
+                      img{
+                        margin-left: 4px;
+                        width: 16px;
+                        height: 16px;
+                      }
+                    }
+                  }
+                  .LeftRcentre{
+                    font-size: 14px;
+                    width: 228px;
+                  }
+                  .LeftRbottom{
+                    font-size: 12px;
+                    width: 228px;
+                    line-height: 20px;
+                  }
+                }
+              }
+            }
+            .peopleBottom{
+              width: 367px;
+              height: 368px;
+              flex-wrap: wrap;
+              align-content: space-evenly;
+              .peopleBottomLeft{
+                width: 315px;
+                height: 146px;
+                margin: 0 auto;
+                .peopleTopLeftL{
+                  width: 60px;
+                  height: 60px;
+                  img{
+                    width: 60px;
+                    height: 60px;
+                    margin-top: 10px;
+                  }
+                  .peoplebtnTop{
+                            width: 60px;
+                    height: 17.5px;
+                  }
+                  .peoplebtnBottom{
+                            width: 60px;
+                    height: 17.5px;
+                  }
+                }
+                .peopleTopLeftR{
+                  width: 228px;
+                  height: 146px;
+                  .LeftRtop{
+                    font-size: 16px;
+                    width: 228px;
+                  }
+                  .LeftRcentre{
+                    font-size: 14px;
+                    width: 228px;
+                  }
+                  .LeftRbottom{
+                    font-size: 12px;
+                    width: 228px;
+                    line-height: 20px;
+                  }
+                }
+              }
+              .peopleBottomReight{
+                margin: 0 auto;
+                width: 315px;
+                height: 146px;
+                .peopleTopLeftL{
+                  width: 60px;
+                  height: 60px;
+                  img{
+                    width: 60px;
+                    height: 60px;
+                    margin-top: 13px;
+                  }
+                  .peoplebtnTop{
+                            width: 60px;
+                    height: 17.5px;
+                  }
+                  .peoplebtnBottom{
+                            width: 60px;
+                    height: 17.5px;
+                  }
+                }
+                .peopleTopLeftR{
+                  width: 228px;
+                  height: 146px;
+                  .LeftRtop{
+                    font-size: 16px;
+                    width: 228px;
+                    .GS{
+                      height: 16px;
+                      margin-bottom: 2px;
+                      img{
+                        margin-left: 4px;
+                        width: 16px;
+                        height: 16px;
+                      }
+                    }
+                    .GSA{
+                      height: 16px;
+                      margin-bottom: 2px;
+                      img{
+                        margin-left: 4px;
+                        width: 16px;
+                        height: 16px;
+                      }
+                    }
+                  }
+                  .LeftRcentre{
+                    font-size: 14px;
+                    width: 228px;
+                  }
+                  .LeftRbottom{
+                    font-size: 12px;
+                    width: 228px;
+                    line-height: 20px;
+                  }
+                }
+              }
+            }
+          }
+          .titleAdv{
+            width: 315px;
+            height: 64px;
+            font-size: 22px;
+            margin: 40px auto 0;
+          }
+          .peopleDetail{
+            width: 343px;
+            height: 760px;
+            margin-top: 20px;
+            padding: 29px 31px 39px 32px;
+            flex-wrap: wrap;
+            background: url('../../assets/img/nasdexImg/h5ninejuxingThree.png') no-repeat;
+            background-size: cover;
+            margin: 0 auto;
+            .peopleDetailPage{
+              height: 190px;
+              width: 280px;
+              margin: 0 auto;
+              .detaileTop{
+                font-size: 16px;
+                .AF,.TT,.TTA,.RW,.RWA,.AFA{
+                  width: 16px;
+                  height: 16px;
+                  margin-bottom: 1px;
+                  img{
+                    margin-left: 2px;
+                    width: 16px;
+                    height: 16px;
+                  }
+                }
+              }
+              .detaileCenter{
+                font-size: 14px;
+              }
+              .detaileBottom{
+                font-size: 12px;
+                width: 290px;
+                line-height: 15px;
+              }
+            }
+            img{
+              width: 60px;
+              height: 60px;
+              margin-left: 105px;
+            }
+          }
+          .titlePar{
+            width: 315px;
+            height: 64px;
+            font-size: 22px;
+            margin: 40px auto 0;
+          }
+          .ParTitle{
+            background: url('../../assets/img/nasdexImg/newh5bgOne.png') no-repeat;
+            background-size: cover;
+            width: 343px;
+            height: 460px;
+            padding: 30px 18px 40px 19px;
+            margin: 0 auto;
+            div{
+              width: 50%;
+              height: 40px;
+              img{
+                width: 146px;
+                height: 40px;
+              }
+            }
+          }
+          .titleBusi{
+            width: 315px;
+            height: 64px;
+            font-size: 22px;
+            margin: 40px auto 0;
+          }
+          .BusiPage{  
+            width: 345px;
+            height: 2108px;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            .busiLine{
+              display: none;
+            }
+            .BusiAll{
+              width: 345px;
+              .BusiRound{
+                display: none;
+              }
+              .BusiTop{
+                font-size: 20px;
+                width: 100px;
+                margin: 10px 0 0 100px;
+              }
+              .BusiCenter{
+                margin-left: 40px;
+                .BusiCenterOne{
+                  font-size: 16px;
+                  margin-left: 13px;
+                }
+              }
+              .BusiBottom{
+                margin-left: 40px;
+                .BusiBottomOne{
+                  font-size: 16px;
+                  margin-top: 0px;
+                }
+                .BusiBottomAll{
+                  p{
+                    font-size: 12px;
+                  }
+                }
+              }
+            }
+            .BusiPageOne{
+              width: 345px;
+              height: 503px;
+              background: url('../../assets/img/nasdexImg/roadmapOne.png') no-repeat;
+              background-size: cover;
+            }
+            .BusiPageTwo{
+              width: 345px;
+              height: 487px;
+              background: url('../../assets/img/nasdexImg/roadmapTwo.png') no-repeat;
+              background-size: cover;
+            }
+            .BusiPageThree{ 
+              width: 345px;
+              height: 582px;
+              background: url('../../assets/img/nasdexImg/roadmapThree.png') no-repeat;
+              background-size: cover;
+              .BusiTop{
+                display: none;
+              }
+              .BusiCenter{
+                display: none;
+              }
+              .BusiBottom{
+                display: none;
+              }
+            }
+            .BusiPageFour{
+              width: 345px;
+              height: 454px;
+              background: url('../../assets/img/nasdexImg/roadmapFour.png') no-repeat;
+              background-size: cover;
+            }
+          }
+        }
+        .footer{
+          width: 375px;
+          height: 211px;
+          margin: -22px auto 0;
+          padding: 63px 47px 0;
+          position: relative;
+          z-index: 300;
+          background-position-y: 55px;
+          background: url('../../assets/img/nasdexImg/h5Bgfooter@2x.png') no-repeat;
+          background-size: cover;
+          .footerTop{
+            height: 24px;
+            justify-content: center;
+          }
+          .footerTopTwo{
+            margin-top: 0;
+          }
+          .footerEnter{
+            width: 300px;
+            margin-top: 0;
+            padding: 0 20px 0;
+          }
+          .footerBottom{
+           text-align: center;
+           margin-top: 0;
+          }
+        } 
+      }
+    }
+  }
