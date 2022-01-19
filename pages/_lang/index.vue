@@ -147,7 +147,36 @@
         </div>
         <a name="people-link"></a>
         <div class="titleOur">OUR TEAM</div>
-        <div class="peoplePage">
+        <div class="peopleDetail">
+          <div class="peopleDetailPage">
+            <img src="../../assets/img/nasdexImg/JoshDu@2x.png" >
+            <div class="detaileTop">Josh Du
+              <a class="RW" @mouseenter="isRw = true" v-show="!isRw" href="https://www.linkedin.com/in/joshdu/" target="_blank"><img src="../../assets/img/nasdexImg/incircle.png" alt=""></a>
+              <a class="RWA" @mouseleave="isRw = false" v-show="isRw" href="https://www.linkedin.com/in/joshdu/" target="_blank"><img src="../../assets/img/nasdexImg/LinkedinDis@2x.png" alt=""></a>
+            </div>
+            <div class="detaileCenter">Chief Investment Officer</div>
+            <div class="detaileBottom">Institutional portfolio manager with over 15 years of investment experience. Managed funds and teams of upwards of USD 1 billion AUM. Knowledgeable in all asset classes including equity, credit, cryptos. Ex-Morgan Stanley, Deutsche Bank.</div>
+          </div>
+          <div class="peopleDetailPage">
+            <img src="../../assets/img/nasdexImg/BelindaZho.png" >
+            <div class="detaileTop">Belinda Zhou
+              <a class="TT" @mouseenter="isTt = true" v-show="!isTt" href="https://www.linkedin.com/in/belindazhou1/" target="_blank"><img src="../../assets/img/nasdexImg/incircle.png" alt=""></a>
+              <a class="TTA" @mouseleave="isTt = false" v-show="isTt" href="https://www.linkedin.com/in/belindazhou1/" target="_blank"><img src="../../assets/img/nasdexImg/LinkedinDis@2x.png" alt=""></a>
+            </div>
+            <div class="detaileCenter">Chief Marketing Officer</div>
+            <div class="detaileBottom">Marketing and community management specialist with 4 years of experience in blockchain. Resourceful in community building and creating project awareness. Ex-DAOventures and Dubai Tourism.</div>
+          </div>
+          <div class="peopleDetailPage">
+            <img src="../../assets/img/nasdexImg/GuruSingh@2x.png" >
+            <div class="detaileTop">Guru Singh 
+              <a class="AF" @mouseenter="isAf = true" v-show="!isAf" href="https://www.linkedin.com/in/gurujeet-singh-sanghar-587a30194/" target="_blank"><img src="../../assets/img/nasdexImg/incircle.png" alt=""></a>
+              <a class="AFA" @mouseleave="isAf = false" v-show="isAf" href="https://www.linkedin.com/in/gurujeet-singh-sanghar-587a30194/" target="_blank"><img src="../../assets/img/nasdexImg/LinkedinDis@2x.png" alt=""></a>
+            </div>
+            <div class="detaileCenter">Product Lead</div>
+            <div class="detaileBottom">Early DeFi Power User with experience as a DeFi strategist, analyst and fund manager with DAOventures and several family offices. Co-Founder & Product Machine at LFG Capital.</div>
+          </div>
+        </div>
+        <!-- <div class="peoplePage">
           <div class="peopleTop">
               <div class="peopleTopLeft">
                 <div class="peopleTopLeftL">
@@ -206,7 +235,7 @@
                 </div>
               </div>
           </div>
-        </div>
+        </div> -->
         <div class="titleAdv">ADVISORS</div>
         <div class="peopleDetail">
           <div class="peopleDetailPage">
