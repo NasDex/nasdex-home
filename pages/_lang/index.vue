@@ -149,13 +149,13 @@
         <div class="titleOur">OUR TEAM</div>
         <div class="peopleDetail">
           <div class="peopleDetailPage">
-            <img src="../../assets/img/nasdexImg/JoshDu@2x.png" >
-            <div class="detaileTop">Josh Du
-              <a class="RW" @mouseenter="isRw = true" v-show="!isRw" href="https://www.linkedin.com/in/joshdu/" target="_blank"><img src="../../assets/img/nasdexImg/incircle.png" alt=""></a>
-              <a class="RWA" @mouseleave="isRw = false" v-show="isRw" href="https://www.linkedin.com/in/joshdu/" target="_blank"><img src="../../assets/img/nasdexImg/LinkedinDis@2x.png" alt=""></a>
+            <img src="../../assets/img/nasdexImg/AlvinFoo.png" alt="">
+            <div class="detaileTop">Alvin Foo 
+              <a class="AF" @mouseenter="isAf = true" v-show="!isAf" href="https://www.linkedin.com/in/alvinfsc/" target="_blank"><img src="../../assets/img/nasdexImg/incircle.png" alt=""></a>
+              <a class="AFA" @mouseleave="isAf = false" v-show="isAf" href="https://www.linkedin.com/in/alvinfsc/" target="_blank"><img src="../../assets/img/nasdexImg/LinkedinDis@2x.png" alt=""></a>
             </div>
-            <div class="detaileCenter">Chief Investment Officer</div>
-            <div class="detaileBottom">Institutional portfolio manager with over 15 years of investment experience. Managed funds and teams of upwards of USD 1 billion AUM. Knowledgeable in all asset classes including equity, credit, cryptos. Ex-Morgan Stanley, Deutsche Bank.</div>
+            <div class="detaileCenter">President</div>
+            <div class="detaileBottom"> Previously Google Head of Mobile China, IPG Managing Director, Omnicom Head of Mobile. Advisor for SXSW, SOSventures, Sparklabs Korea. Emerging Tech & Marketing Evangelist.</div>
           </div>
           <div class="peopleDetailPage">
             <img src="../../assets/img/nasdexImg/BelindaZho.png" >
@@ -239,6 +239,15 @@
         <div class="titleAdv">ADVISORS</div>
         <div class="peopleDetail">
           <div class="peopleDetailPage">
+            <img src="../../assets/img/nasdexImg/JoshDu@2x.png" >
+            <div class="detaileTop">Josh Du
+              <a class="RW" @mouseenter="isRw = true" v-show="!isRw" href="https://www.linkedin.com/in/joshdu/" target="_blank"><img src="../../assets/img/nasdexImg/incircle.png" alt=""></a>
+              <a class="RWA" @mouseleave="isRw = false" v-show="isRw" href="https://www.linkedin.com/in/joshdu/" target="_blank"><img src="../../assets/img/nasdexImg/LinkedinDis@2x.png" alt=""></a>
+            </div>
+            <div class="detaileCenter">Advisor</div>
+            <div class="detaileBottom">Institutional portfolio manager with over 15 years of investment experience. Managed funds and teams of upwards of USD 1 billion AUM. Knowledgeable in all asset classes including equity, credit, cryptos. Ex-Morgan Stanley, Deutsche Bank.</div>
+          </div>
+          <div class="peopleDetailPage">
             <img src="../../assets/img/nasdexImg/RichardWang@2x.png" alt="">
             <div class="detaileTop">Richard Wang 
               <a class="RW" @mouseenter="isRw = true" v-show="!isRw" href="https://www.linkedin.com/in/richardwang/" target="_blank"><img src="../../assets/img/nasdexImg/incircle.png" alt=""></a>
@@ -255,15 +264,6 @@
             </div>
             <div class="detaileCenter">Managing Partner at IPV Capital</div>
             <div class="detaileBottom">Co Founder and Managing Partner of IPV Capital venture funds with $250m under management. Holds board seats on several IPV portfolio companies including Amprius, Giantec and V-Key Inc.</div>
-          </div>
-          <div class="peopleDetailPage">
-            <img src="../../assets/img/nasdexImg/AlvinFoo.png" alt="">
-            <div class="detaileTop">Alvin Foo 
-              <a class="AF" @mouseenter="isAf = true" v-show="!isAf" href="https://www.linkedin.com/in/alvinfsc/" target="_blank"><img src="../../assets/img/nasdexImg/incircle.png" alt=""></a>
-              <a class="AFA" @mouseleave="isAf = false" v-show="isAf" href="https://www.linkedin.com/in/alvinfsc/" target="_blank"><img src="../../assets/img/nasdexImg/LinkedinDis@2x.png" alt=""></a>
-            </div>
-            <div class="detaileCenter">Co-founder at DAOventures</div>
-            <div class="detaileBottom"> Previously Google Head of Mobile China, IPG Managing Director, Omnicom Head of Mobile. Advisor for SXSW, SOSventures, Sparklabs Korea. Emerging Tech & Marketing Evangelist.</div>
           </div>
         </div>
         <div class="titlePar">PARTNERS AND INVESTORS</div>
