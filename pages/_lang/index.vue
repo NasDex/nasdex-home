@@ -25,7 +25,7 @@
         <div class="nav">
           <div class="navOne navAll"><a href="##" @click="changeAbout(850)">ABOUT</a></div>
           <div class="navTwo navAll"><a href="##" @click="changeAbout(2700)">HOW IT WORKS</a></div>
-          <div class="navThree navAll"><a href="##" @click="changeAbout(3300)">TEAM</a></div>
+          <!-- <div class="navThree navAll"><a href="##" @click="changeAbout(3300)">TEAM</a></div> -->
           <div class="navFour navAll"><a href="https://nasdexofficial.gitbook.io/nasdex" target="_blank">DOCS</a></div>
           <div class="navFive navAll"><a href="https://docsend.com/view/ahc6avcpf8qjjkcw" target="_blank">WHITEPAPER</a></div>
           <div class="navSix navAll"><a href="##" @click="changeAbout(8000)">CONTACT US</a></div>
@@ -39,7 +39,7 @@
             <div class="frameBottom">
               <a href="##" class="navOne" @click="changeAbout(580)">ABOUT</a>
               <a href="##" class="navTwo" @click="changeAbout(2500)">HOW IT WORKS</a>
-              <a href="##" class="navThree" @click="changeAbout(2700)">TEAM</a>
+              <!-- <a href="##" class="navThree" @click="changeAbout(2700)">TEAM</a> -->
               <a href="https://nasdexofficial.gitbook.io/nasdex" target="_blank" @click="isRightFrame = false" class="navFour">DOCS</a>
               <a href="https://docsend.com/view/ahc6avcpf8qjjkcw" target="_blank" @click="isRightFrame = false" class="navFive">WHITEPAPER</a>
               <a href="##" class="navSix" @click="changeAbout(7000)">CONTACT US</a>
