@@ -146,7 +146,7 @@
           </div>
         </div>
         <a name="people-link"></a>
-        <div class="titleOur">OUR TEAM</div>
+        <!-- <div class="titleOur">OUR TEAM</div>
         <div class="peopleDetail">
           <div class="peopleDetailPage">
             <img src="../../assets/img/nasdexImg/AlvinFoo.png" alt="">
@@ -175,7 +175,7 @@
             <div class="detaileCenter">Product Lead</div>
             <div class="detaileBottom">Early DeFi Power User with experience as a DeFi strategist, analyst and fund manager with DAOventures and several family offices. Co-Founder & Product Machine at LFG Capital.</div>
           </div>
-        </div>
+        </div> -->
         <!-- <div class="peoplePage">
           <div class="peopleTop">
               <div class="peopleTopLeft">
@@ -236,7 +236,7 @@
               </div>
           </div>
         </div> -->
-        <div class="titleAdv">ADVISORS</div>
+        <!-- <div class="titleAdv">ADVISORS</div>
         <div class="peopleDetail">
           <div class="peopleDetailPage">
             <img src="../../assets/img/nasdexImg/JoshDu@2x.png" >
@@ -265,7 +265,7 @@
             <div class="detaileCenter">Managing Partner at IPV Capital</div>
             <div class="detaileBottom">Co Founder and Managing Partner of IPV Capital venture funds with $250m under management. Holds board seats on several IPV portfolio companies including Amprius, Giantec and V-Key Inc.</div>
           </div>
-        </div>
+        </div> -->
         <div class="titlePar">PARTNERS AND INVESTORS</div>
         <div class="ParTitle">
           <div><img src="../../assets/img/nasdexImg/PlutusVC@2x.png" alt=""></div>
